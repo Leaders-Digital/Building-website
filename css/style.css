@@ -102,6 +102,8 @@
   --bs-gutter-y: 0px;
 }
 
+
+
 body {
   font-size: 16px;
   font-family: var(--thm-b-font);
@@ -579,7 +581,7 @@ img {
 .main {
   display: flex;
   align-items: flex-end;
-  width: 86%;
+  width: 110%;
   position: relative;
   /* This ensures all bars start growing from the bottom */
 }
