@@ -27,7 +27,7 @@
     ></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init("RESubp6kdWiVjxIQd");
+        emailjs.init("jQ0PDrO1hEQJsrFtT");
       })();
     </script>
     <!-- rtl css -->
@@ -259,7 +259,7 @@
       <section class="contact-section contact-two">
         <div class="auto-container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4" >
               <div class="contact-two__content">
                 <div class="sec-title">
                   <h2>Rester en contact avec nous<span class="dot">.</span></h2>
@@ -286,119 +286,236 @@
                 <div class="default-form">
                   <form id="contact-form">
                     <div class="row clearfix">
-                      <!-- Champs existants -->
+                      <!-- Informations Générales -->
+                      <div class="col-lg-12">
+                        <h3 class="section-title">Informations Générales :</h3>
+                      </div>
+            
                       <div class="form-group col-lg-6 col-md-6 col-sm-12">
                         <div class="field-inner">
                           <input
                             type="text"
                             name="from_name"
                             id="from_name"
-                            value=""
-                            placeholder="Nom et Prenom"
-                            required=""
+                            placeholder="Nom de la société / Nom du client"
+                            required
                           />
                         </div>
                       </div>
+            
                       <div class="form-group col-lg-6 col-md-6 col-sm-12">
                         <div class="field-inner">
                           <input
                             type="email"
                             name="email_id"
                             id="email_id"
-                            value=""
-                            placeholder="Email"
-                            required=""
+                            placeholder="Adresse e-mail"
+                            
                           />
                         </div>
                       </div>
-                      <div class="form-group col-lg-12 col-md-12 col-sm-12">
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
                         <div class="field-inner">
                           <input
                             type="number"
                             name="tel"
                             id="tel"
-                            value=""
-                            placeholder="Telephone"
-                            required=""
+                            placeholder="Numéro de téléphone"
+                            required
                           />
                         </div>
                       </div>
             
-                      <!-- Cases à cocher -->
-                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
                         <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="service" value="Étude de Projet" />
-                            <span class="checkbox-custom"></span>
-                            Étude de Projet
-                          </label>
+                          <input
+                            type="text"
+                            name="Lieu"
+                            id="Lieu"
+                            placeholder="Adresse du projet (lieu de construction)"
+                          />
                         </div>
                       </div>
-                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
-                        <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="service" value="Gestion et Supervision" />
-                            <span class="checkbox-custom"></span>
-                            Gestion et Supervision
-                          </label>
-                        </div>
-                      </div>
-                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
-                        <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="service" value="Conseils et Expertise Technique" />
-                            <span class="checkbox-custom"></span>
-                            Conseils et Expertise Technique
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                        <div class="field-inner">
-                          <h3 class="section-title">Construction et Réhabilitation : </h3>
-                        </div>
-                      </div>
-
-                      <!-- Cases à cocher 2 -->
-
-                      <div class="form-group col-lg-4 col-md-12 col-sm-12">
-                        <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="const" value="Démolition et Construction" />
-                            <span class="checkbox-custom"></span>
-                            Démolition et Construction
-                          </label>
-                        </div>
-                      </div>
-                      <div class="form-group col-lg-4 col-md-12 col-sm-12">
-                        <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="const" value="Rénovation" />
-                            <span class="checkbox-custom"></span>
-                            Rénovation
-                          </label>
-                        </div>
-                      </div>
-                      <div class="form-group col-lg-4 col-md-12 col-sm-12">
-                        <div class="field-inner">
-                          <label class="checkbox-label">
-                            <input type="checkbox" name="const" value="Réaménagement" />
-                            <span class="checkbox-custom"></span>
-                            Réaménagement 
-                          </label>
-                        </div>
-                      </div>
-
             
+                      <!-- Type de Projet -->
+                      <div class="col-lg-12">
+                        <div class="field-inner">
+                          <h3 class="section-title">Type de Projet :</h3>
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                        <div class="field-inner">
+                          <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Nouvelle construction" />
+                            <span class="checkbox-custom"></span>
+                            Nouvelle construction
+                          </label>
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                        <div class="field-inner">
+                          <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Rénovation / Extension" />
+                            <span class="checkbox-custom"></span>
+                            Rénovation / Extension
+                          </label>
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                        <div class="field-inner">
+                          <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="Aménagement intérieur" />
+                            <span class="checkbox-custom"></span> Aménagement intérieur
+                          </label>
+                        </div>
+                      </div>
+            
+                      <!-- Terrain -->
+                      <div class="col-lg-12">
+                        <h3 class="section-title">Terrain :</h3>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        Propriétaire du terrain :
+                        <div class="field-inner">
+                          <label class="checkbox-label">
+                            <input type="checkbox" name="proprietaire_terrain" value="Oui" />
+                             <span class="checkbox-custom"></span>
+                             Oui
+                          </label>
+                          <label class="checkbox-label">
+                            <input type="checkbox" name="proprietaire_terrain" value="Non" />
+                            <span class="checkbox-custom"></span>
+                            Non
+                          </label>
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="adresse_terrain"
+                            id="adresse_terrain"
+                            placeholder="Adresse du terrain"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="number"
+                            name="superficie_terrain"
+                            id="superficie_terrain"
+                            placeholder="Superficie du terrain (m²)"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="statut_administratif"
+                            id="statut_administratif"
+                            placeholder="Statut administratif (prêt à construire, en cours de validation ...)"
+                          />
+                        </div>
+                      </div>
+            
+                      <!-- En cas de construction existante -->
+                      <div class="col-lg-12">
+                        <h3 class="section-title">En cas de construction existante :</h3>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="nature_batiment"
+                            id="nature_batiment"
+                            placeholder="Nature du bâtiment existant (maison, immeuble, local commercial ...)"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="number"
+                            name="annee_construction"
+                            id="annee_construction"
+                            placeholder="Année de construction"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="number"
+                            name="superficie_actuelle"
+                            id="superficie_actuelle"
+                            placeholder="Superficie actuelle (m²)"
+                          />
+                        </div>
+                      </div>
+            
+                      <!-- Détails Techniques -->
+                      <div class="col-lg-12">
+                        <h3 class="section-title">Détails Techniques :</h3>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="type_construction"
+                            id="type_construction"
+                            placeholder="Type de construction (Résidentiel, commercial, industriel ...)"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="budget_estime"
+                            id="budget_estime"
+                            placeholder="Budget estimé"
+                          />
+                        </div>
+                      </div>
+            
+                      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                        <div class="field-inner">
+                          <input
+                            type="text"
+                            name="delais_souhaite"
+                            id="delais_souhaite"
+                            placeholder="Délais souhaités (date de début et de fin)"
+                          />
+                        </div>
+                      </div>
+            
+                      <!-- Message -->
                       <div class="form-group col-lg-12 col-md-12 col-sm-12">
                         <div class="field-inner">
                           <textarea
                             name="message"
                             placeholder="Message"
-                            required=""
+                            
                           ></textarea>
                         </div>
                       </div>
+            
+                      <!-- Button -->
                       <div class="form-group col-lg-12 col-md-12 col-sm-12">
                         <button class="theme-btn btn-style-one">
                           <i class="btn-curve"></i>
@@ -410,6 +527,7 @@
                 </div>
               </div>
             </div>
+            
             
             <!-- /.col-lg-8 -->
           </div>

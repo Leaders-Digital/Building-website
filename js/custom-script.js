@@ -1256,7 +1256,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
-    emailjs.sendForm("service_19rsab1", "template_6146vls", this).then(
+    emailjs.sendForm("service_r3zzoeu", "template_oqkmuhs", this).then(
       function (response) {
         alert(
           "Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dès que possible.",
