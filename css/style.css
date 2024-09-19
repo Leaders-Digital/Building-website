@@ -4987,11 +4987,11 @@ img.lazy-image.loaded {
   right: 20px;
   bottom: 20px;
   color: #ffffff;
-  opacity: 0;
-  -webkit-transform: translateY(200px);
+
+  /* -webkit-transform: translateY(200px);
   transform: translateY(200px);
   -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  transition: all 500ms ease; */
 }
 
 .gallery-item .inner-box:hover .cap-box {
