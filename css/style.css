@@ -290,7 +290,7 @@ body.boxed-wrapper {
 
 .auto-container {
   position: static;
-  max-width: 1200px;
+  max-width:1292px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -5513,10 +5513,10 @@ img.lazy-image.loaded {
 .team-block .image-box img {
   display: block;
   width: 100%;
-  -webkit-filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(100%); */
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   border-radius: 7px;
