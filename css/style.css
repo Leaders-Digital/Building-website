@@ -581,7 +581,7 @@ img {
 .main {
   display: flex;
   align-items: flex-end;
-  width: 110%;
+  width: 84%;
   position: relative;
   /* This ensures all bars start growing from the bottom */
 }
@@ -630,7 +630,6 @@ img {
   justify-content: flex-end;
   align-items: flex-end;
   /* Ensure text is at the bottom */
-  margin-left: 11px;
 }
 
 .firstbar span {
