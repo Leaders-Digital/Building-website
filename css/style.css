@@ -295,6 +295,14 @@ body.boxed-wrapper {
   margin: 0 auto;
 }
 
+.whatsapp-icon {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
 ul,
 li {
   list-style: none;
