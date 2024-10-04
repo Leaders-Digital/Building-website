@@ -499,6 +499,24 @@ figure {
   background: linear-gradient(100deg, #432ff6 0%, #f174e3 100%);
 }
 
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateMe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .preloader .icon {
   position: fixed;
   left: 0px;
@@ -510,25 +528,14 @@ figure {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../img/logo/logo_blanc.png);
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  -webkit-animation-name: rotateMe;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: rotateMe;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: rotateMe;
-  -ms-animation-duration: 2s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  animation-name: rotateMe;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  
+  /* Rotate animation */
+  animation:  infinite linear, fadeInOut 2s infinite ease-in-out;
+  
+  /* Transition for smooth fading */
+  transition: opacity 200ms ease-in-out;
 }
+
 
 .preloader__gradient .icon {
   background-image: url(../images/update-26-02-2021/preloader-white.png);
