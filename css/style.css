@@ -596,7 +596,7 @@ img {
 .main {
   display: flex;
   align-items: flex-end;
-  width: 84%;
+ 
   position: relative;
   /* This ensures all bars start growing from the bottom */
 }
@@ -3069,16 +3069,22 @@ img.lazy-image.loaded {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 20px;
+  font-size: 28px;
   cursor: pointer;
-  color: #333;
-  transition: color 0.3s ease;
+  color: #fff;
+  background-color: #e53935; /* Rouge vif */
+  padding: 8px;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Close button hover effect */
 .close-btn:hover {
-  color: #dcc151;
+  background-color: #b71c1c; /* Rouge foncé au survol */
+  color: #fff;
 }
+
 
 /* Styled close button */
 .styled-button {

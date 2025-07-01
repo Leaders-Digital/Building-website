@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaders Building - Application Mobile</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&family=Teko:wght@400&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/owl.css" rel="stylesheet" />
+  <link href="css/flaticon.css" rel="stylesheet" />
+  <link href="css/linoor-icons-2.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/jquery-ui.css" rel="stylesheet" />
+  <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+  <link href="css/hover.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jarallax.css" />
+  <link href="css/custom-animate.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- rtl css -->
+  <link href="css/rtl.css" rel="stylesheet" />
+  <!-- Responsive File -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Color css -->
+
+  <link rel="stylesheet" id="jssDefault" href="css/colors/color-default.css" />
+
+  <link rel="shortcut icon" href="images/favicon.png" id="fav-shortcut" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.png" id="fav-icon" type="image/x-icon" />
+
+  <!-- Responsive Settings -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+        body {
+            background: #fafbfc;
+
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+      
+        .mobile-app-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding:0px 30px;
+            min-height: 100vh;
+            padding: 40px 10px;
+            background: #fafbfc;
+        }
+        .mobile-app-content {
+            max-width: 800px;
+            margin-right: 40px;
+        }
+        .mobile-app-content h2 {
+            font-family: 'Teko', Arial, sans-serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 20px 0 10px 0;
+            color: #222;
+            letter-spacing: -1px;
+        }
+        .mobile-app-content p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .mobile-app-content > div:first-child {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .download-btn {
+            background: #ffd36a;
+            color: #222;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: background 0.2s;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .download-btn:hover {
+            background: #ffbe3d;
+        }
+        .store-buttons {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+            flex-direction: row;
+        }
+        .store-buttons img {
+            height: 50px;
+            width: auto;
+            cursor:not-allowed;
+        }
+        .coming {
+            margin-top: 16px;
+            margin-left: 16px;
+        
+        }
+        .mobile-app-image {
+            min-width: 320px;
+            max-width: 350px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 150px;
+        }
+        .mobile-app-image img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            background-color: #fafbfc;
+        }
+        .qr-code-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0 0 0;
+        }
+        .qr-code-section h2 {
+            font-family: 'Teko', Arial, sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            margin-right:75px;
+        }
+        .qr-code-section img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-radius: 12px;
+        }
+        .store-buttons2 {
+            display: none;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 24px;
+            flex-direction: row;
+        }
+        .store-buttons2 img {
+            height: 50px;
+            width: auto;
+            cursor: pointer;
+        }
+        .app-features-section {
+            margin: 120px auto 0 auto;
+            padding: 40px 16px 32px 16px;
+            
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .features-title {
+            font-family: 'Teko', Arial, sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .dot-highlight {
+            color: #ffd36a;
+            font-size: 2.8rem;
+        }
+        .features-desc {
+            color: #888;
+            font-size: 1.1rem;
+            max-width: 1500px;
+            margin: 0 auto 36px auto;
+        }
+        .features-row {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 32px 24px;
+            justify-content: center;
+        }
+        .feature-item {
+            flex: 1 1 0;
+            max-width: 250px;
+            min-width: 150px;
+            box-sizing: border-box;
+            margin-bottom: 32px;
+              display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        .feature-icon {
+            background: #000;
+            color: #ffd36a;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 18px;
+        }
+        .feature-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .feature-text {
+            color: #444;
+            font-size: 1rem;
+        }
+        .demo-section {
+            position: relative;
+            width: 100%;
+            min-height: 600px;
+            background: url('img/MobileApp/background.png') center center/cover no-repeat;
+            background-color: black;
+            opacity: 0.9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        .main-headerr{
+            background: url('img/MobileApp/background.png') ;
+            background-color: black;
+            min-height: 12vh; 
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+          .nav-logo {
+            max-width: 150px;
+            height: auto;
+        }
+        .demo-title {
+            font-family: 'Teko', Arial, sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #fff;
+            z-index: 999;
+            position: absolute;
+            top: 50px;
+        }
+        .video-fullscreen-container {
+            position: absolute;
+            top: 150px; left: 0; right: 0; bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .video-fullscreen-container iframe {
+            width: 80vw;
+            height: 45vw;
+            max-width: 900px;
+            max-height: 506px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        /* We Do Section Styles */
+        .we-do-section {
+            position: relative;
+            padding: 120px 0 90px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+       
+        .we-do-section .sec-title h2 {
+            font-family: 'Teko', Arial, sans-serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+        .we-do-section .sec-title h2 .dot {
+            color: #ffd36a;
+        }
+        /* Accordion Styles */
+        .accordion-box {
+            position: relative;
+        }
+        .accordion-box .block {
+            position: relative;
+            background: #ffffff;
+            width: 100%;
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.03);
+        }
+        .accordion-box .block.active-block {
+            box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.05);
+        }
+        .accordion-box .block:last-child {
+            margin-bottom: 0;
+        }
+        .accordion-box .block .acc-btn {
+            position: relative;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            padding: 20px 40px;
+            padding-right: 60px;
+            color: #000000;
+            transition: all 500ms ease;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .accordion-box .block .acc-btn .count {
+            color: #ffd36a;
+            padding-right: 3px;
+        }
+        .accordion-box .block .acc-btn:before {
+            position: absolute;
+            right: 35px;
+            top: 20px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffd36a;
+            line-height: 30px;
+            content: "+";
+            font-family: Arial, sans-serif;
+            transition: all 500ms ease;
+        }
+        .accordion-box .block .acc-btn.active {
+            background-color: #ffffff;
+        }
+        .accordion-box .block .acc-btn.active:before {
+            color: #000000;
+            content: "-";
+        }
+        .accordion-box .block .acc-content {
+            position: relative;
+            display: none;
+        }
+        .accordion-box .block .content {
+            position: relative;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 0px 40px 30px;
+        }
+        .accordion-box .block .acc-content.current {
+            display: block;
+            background-color: #f8f9fa;
+            width: 100%;
+        }
+        .accordion-box .block .content .text {
+            display: block;
+            position: relative;
+            width: 100%;
+            color: #000000;
+            top: 0px;
+            padding-top: 20px;
+            display: block;
+        }
+    .coming2{
+        display: none;
+    }
+        @media (max-width: 900px) {
+            .coming{
+                display: none;
+            }
+.coming2{
+                display: block;
+                margin-top: 20px;
+            }
+            .mobile-app-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 1vw;
+            }
+            .mobile-app-content {
+                margin-right: 0;
+                margin-bottom: 32px;
+                max-width: 100%;
+            }
+            .mobile-app-image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 0;
+                max-width: 350px;
+                width: 100%;
+                justify-content: center;
+            }
+            .mobile-app-image img {
+                max-width: 90vw;
+                border-radius: 24px;
+            }
+            .mobile-app-content h2 {
+                font-size: 2.2rem;
+            }
+            .download-btn {
+                width: 100%;
+                font-size: 1rem;
+                padding: 12px 0;
+            }
+            .store-buttons {
+                display: none;
+            }
+            .store-buttons2 {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .store-buttons2 img {
+                height: 44px;
+            }
+            .features-row {
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 24px 0;
+                justify-content: center;
+            }
+            .feature-item {
+                max-width: 48%;
+                flex-basis: 48%;
+                margin-left: 1%;
+                margin-right: 1%;
+                text-align: center;
+                margin-bottom: 5px ;
+            }
+            .feature-icon {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size:1.5rem;
+                    width: 70px;
+                    height: 70px;
+            }
+            .feature-title,
+            .feature-text {
+                text-align: center;
+                font-size: 12px;
+            }
+           
+        }
+        @media (max-width: 600px) {
+            .mobile-app-section {
+                padding: 50px 2vw;
+            }
+            .mobile-app-content h2 {
+                font-size: 1.5rem;
+            }
+            .mobile-app-content p {
+                font-size: 1rem;
+            }
+            .mobile-app-image img {
+                max-width: 98vw;
+                border-radius: 10px;
+            }
+            .qr-code-section {
+                margin-top: 24px;
+            }
+            .qr-code-section h2 {
+                font-size: 1.3rem;
+            }
+            .qr-code-section img {
+                max-width: 100%;
+                border-radius: 5px;
+            }
+            .demo-section {
+                padding: 40px 15px;
+                max-width: 100%;
+                min-height: 250px;
+            }
+            .demo-title {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            .video-fullscreen-container {
+                max-width: 100%;
+                top: 100px;
+
+                border-radius: 8px;
+            }
+             .features-title {
+            font-size: 2rem;
+         
+        }
+        .features-desc{
+            font-size: 0.8rem;
+        }
+        .sec-title h2 {
+            font-size: 0.5rem;
+        }   
+          .we-do-section {
+            padding-top: 50px;
+        }      
+        }
+        header.main-header.header-style-one,
+        .main-header,
+        .main-header.header-style-one,
+        .main-header.fixed-header,
+        .main-header.header-style-one.transparent {
+            background: #000 !important;
+            transition: none !important;
+        }
+        .main-header .nav-outer,
+        .main-header.fixed-header .nav-outer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            float: left;
+            text-align: center;
+            width: 100%;
+            z-index: 5;
+            background-color: black !important;
+            height: 120px;
+            padding: 0 !important;
+            transition: none !important;
+        }
+        .main-header .header-upper,
+        .main-header.fixed-header .header-upper {
+            height: 80px;
+            padding: 0 !important;
+            transition: none !important;
+        }
+        .main-header.fixed-header {
+            background: #000 !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="icon"></div>
+    </div>
+    
+ 
+   <nav class="main-headerr">
+    <img class="nav-logo" src="/img/logo/logo.png" />
+
+   </nav>
+
+    <div class="mobile-app-section">
+        <div class="mobile-app-content">
+            <div style="color:#888; font-size:1rem; margin-bottom:8px; ">Découvrez La nouvelle Application Mobile Leaders Building</div>
+            <h2>Suivez votre chantier en temps réel ,<br>où que vous soyer</h2>
+            <p>Grace à notre nouvelle application mobile , restez informé de l'avancement de vos travaux , visualisez les étapes clés et recevez des mises à jours instantanés.</p>
+            <a href="MobileApp/application-apk-leaders-building.apk" download>
+ <button class="download-btn">Télécharger Maintenant</button>
+</a>
+
+           
+            <div class="store-buttons">
+                <img src="img/MobileApp/Apple download button.png" alt="Download on the App Store">
+                <img src="img/MobileApp/Google download button.png" alt="Get it on Google Play">
+            </div>
+            <p class="coming">
+                Bientôt disponible sur Android et iOS
+            </p>
+        </div>
+        <div class="mobile-app-image">
+            <img src="img/MobileApp/iPhone 12 Pro Max.png" alt="Mobile App Preview">
+            <div class="store-buttons2">
+                <img src="img/MobileApp/Apple download button.png" alt="Download on the App Store">
+                <img src="img/MobileApp/Google download button.png" alt="Get it on Google Play">
+              
+            </div>
+              <p class="coming2">
+                Bientôt disponible sur Android et iOS
+            </p>
+        </div>
+        
+    </div>
+     <section class="demo-section">
+    <h2 class="demo-title">DÉMO <span class="dot-highlight">.</span></h2>
+    <div class="video-fullscreen-container">
+        <iframe 
+            src="https://www.youtube.com/embed/LMszXqhlnBE" 
+            title="YouTube video demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+   
+    <section class="app-features-section">
+            <h2 class="features-title">Découvrez comment utiliser l'application <span class="dot-highlight">.</span></h2>
+            <p class="features-desc">LEADERS BUILDING est une application mobile conçue pour vous permettre de suivre l'avancement de vos chantiers en temps réel, où que vous soyez. Pensée pour les clients exigeants et les professionnels de la construction, elle centralise toutes les informations clés de votre projet dans une interface simple, claire et sécurisée.</p>
+            <div class="features-row">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
+                    <div class="feature-title">Journal photo quotidien</div>
+                    <div class="feature-text">Suivez l'évolution de votre chantier en images, chaque jour.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-tractor"></i></div>
+                    <div class="feature-title">Avancement étape par étape</div>
+                    <div class="feature-text">Visualisez clairement chaque phase de vos travaux.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                    <div class="feature-title">Notifications instantanées</div>
+                    <div class="feature-text">Soyez informé à chaque mise à jour importante.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="feature-title">Connexion sécurisée</div>
+                    <div class="feature-text">Accédez à vos projets en toute confidentialité.</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+     <section class="we-do-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Left Column-->
+                <div class=" col-lg-12 col-md-12 col-sm-12">
+                    <div class="inner">
+                        <div class="sec-title">
+                            <h2>FAQ
+                                ?<span class="dot">.</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="  col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="faq-box">
+                                <ul class="accordion-box clearfix">
+                                    <!--Block-->
+                                    <li class="accordion block"
+                                        style="display: flex;flex-direction: column;width: 100%;">
+                                        <div class="acc-btn" style="border-bottom: 50px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <span class="count">1.</span>
+                                                <h3 style="font-size: 20px; margin: 0;">À quoi sert l'application Leaders Building ?
+</h3>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text">
+                                                    L'application vous permet de suivre l’avancement de votre chantier en temps réel, où que vous soyez, avec toutes les informations importantes centralisées au même endroit.
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--Block-->
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <span class="count">2.</span>
+                                                <h3 style="font-size: 20px; margin: 0;">Quelles sont les principales fonctionnalités de l'application ?
+</h3>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text">
+                                                 * Statistiques détaillées : vous accédez à tous les chiffres liés à l’évolution de votre projet. <br/>
+                                                  * Accès à l’équipe du projet : découvrez les membres responsables et contactez-les facilement.<br/> 
+                                                 * Espace documents et photos : retrouvez tous les fichiers et visuels associés à votre chantier, à tout moment.<br/> 
+                                                 * Vidéo hebdomadaire : chaque vendredi, recevez une vidéo claire et en haute qualité montrant l'évolution de votre chantier.
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!--Right Column-->
+                <div class=" col-lg-12 col-md-12 col-sm-12" style="padding-top: 15px;">
+                    <div class="inner">
+                        <div class="faq-box">
+                            <ul class="accordion-box accordion-box__dark clearfix">
+
+                                <!--Block-->
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <span class="count">3.</span>
+                                            <h3 style="font-size: 20px; margin: 0;">Comment puis-je accéder à l’application ?
+</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">
+                                              Si vous êtes client chez Leaders Building, vous recevrez un e-mail contenant toutes vos informations de connexion ainsi que le lien de téléchargement de l’application.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--Block-->
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <span class="count">4.</span>
+                                            <h3 style="font-size: 20px; margin: 0;">Sur quels appareils puis-je installer l’application ?
+</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">
+                                               L’application est disponible sur smartphone (Android & iOS) et peut aussi être consultée via navigateur web.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <span class="count">5.</span>
+                                            <h3 style="font-size: 20px; margin: 0;">Est-ce que mes données sont sécurisées ?
+
+</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">
+Oui, toutes vos données sont protégées et hébergées sur des serveurs sécurisés. Vous seul (et l’équipe de chantier) y avez accès.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <span class="count">6.</span>
+                                            <h3 style="font-size: 20px; margin: 0;">Que faire si je rencontre un problème technique ?
+
+
+</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="content">
+                                            <div class="text">
+Vous pouvez contacter notre support technique directement sur contact@leaders-building.com. Une équipe dédiée est à votre disposition pour vous aider rapidement.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+            <div class="auto-container">
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="row clearfix">
+                        <!--Column (logo-widget spanning two columns)-->
+                        <div class="column col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="widget-content">
+                                    <div class="logo">
+                                        <a href="index.html"><img id="fLogo"
+                                                src="img/resource/Home/leaders-building-logo-tunisie.png"
+                                                alt="Logo de notre entreprise de construction" /></a>
+                                    </div>
+                                    <div class="text">
+                                        Fondée en 2020, LEADERS BUILDING est une Société tunisienne de construction
+                                        spécialisée dans les projets résidentiels et commerciaux.
+
+                                    </div>
+                                    <ul class="social-links clearfix">
+                                        <li>
+                                            <a href="https://www.facebook.com/LeadersBuilding"><span
+                                                    class="fab fa-facebook-square"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/@leadersbuilding6918"><span
+                                                    class="fab fa-youtube"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/leadersbuilding/"><span
+                                                    class="fab fa-instagram"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/leaders-building-47b437211"><span
+                                                    class="fab fa-linkedin"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Column (Contact)-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget info-widget">
+                                <div class="widget-content">
+                                    <ul class="contact-info">
+                                        <li class="address">
+                                            <span class="icon flaticon-pin-1"></span> <a
+                                                href="https://maps.app.goo.gl/bmQuBY3xzbAUFrds8"> Cité des Pins, Les
+                                                berges du lac 2 1053 Tunis, Tunisie</a>
+
+                                        </li>
+                                        <li>
+                                            <span class="icon flaticon-call"></span><a
+                                                href="tel:+21627246345">+21627246345</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon flaticon-email-2"></span><a
+                                                href="mailto:contact@leaders-building.com">contact@leaders-building.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Column (Contact)-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget info-widget">
+                                <div class="widget-content">
+                                    <ul class="list-unstyled footer-widget__links">
+                                        <li>
+                                            <span class="icon flaticon-web-design"></span>
+                                            <a href="mentionslegales.html">Mentions légales</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="icon flaticon-web-design"></span>
+                                            <a href="politique.html">Politique de confidentialité</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="icon flaticon-web-design"></span>
+                                            <a href="politiquedecookies.html">Politique de cookies</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="icon flaticon-web-design"></span>
+                                            <a href="societe-batiment.html">Qui somme nous</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="icon flaticon-web-design"></span>
+                                            <a href="contact.html">Contactez-nous</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="inner clearfix">
+                        <div class="copyright">
+                            &copy; Copyright 2025 By Leaders Digital
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/custom-script.js"></script>
+
+    <script src="js/lang.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/color-switcher.js"></script>
+    
+    <!-- Custom Accordion Code - Loaded after all other scripts -->
+    <script>
+      // Swiper functionality
+      let featureSwiper = null;
+      function handleFeatureSwiper() {
+          const isMobile = window.innerWidth <= 900;
+          if (isMobile && !featureSwiper) {
+              featureSwiper = new Swiper('.features-row', {
+                  slidesPerView: 1,
+                  spaceBetween: 24,
+                  pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                  },
+              });
+          } else if (!isMobile && featureSwiper) {
+              featureSwiper.destroy(true, true);
+              featureSwiper = null;
+          }
+      }
+      
+      // Wait for all scripts to load, then initialize accordion
+      $(window).on('load', function() {
+          // Initialize Swiper
+          handleFeatureSwiper();
+          window.addEventListener('resize', handleFeatureSwiper);
+          
+          // Remove any existing accordion event handlers
+          $(".accordion-box").off('click', '.acc-btn');
+          
+          // Add our custom accordion functionality
+          if ($(".accordion-box").length) {
+              $(".accordion-box").on("click", ".acc-btn", function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  
+                  var $this = $(this);
+                  var $accordion = $this.closest(".accordion");
+                  var $outerBox = $this.closest(".accordion-box");
+                  
+                  // Check if current accordion is already active
+                  if ($accordion.hasClass("active-block")) {
+                      // Close current accordion
+                      $accordion.removeClass("active-block");
+                      $this.removeClass("active");
+                      $accordion.find(".acc-content").slideUp(300);
+                  } else {
+                      // Close all accordions in the same box
+                      $outerBox.find(".accordion").removeClass("active-block");
+                      $outerBox.find(".accordion .acc-btn").removeClass("active");
+                      $outerBox.find(".accordion .acc-content").slideUp(300);
+                      
+                      // Open current accordion
+                      $accordion.addClass("active-block");
+                      $this.addClass("active");
+                      $accordion.find(".acc-content").slideDown(300);
+                  }
+              });
+          }
+      });
+    </script>
+     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+</body>
+</html>
