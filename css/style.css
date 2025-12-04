@@ -849,6 +849,40 @@ img {
   vertical-align: middle;
 }
 
+.main-header .other-links .social-links-nav {
+  position: relative;
+  float: left;
+  padding: 40px 0px;
+  padding-right: 50px;
+  margin-right: 50px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.main-header .other-links .social-links-nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff !important;
+  transition: all 300ms ease;
+  line-height: 1;
+}
+
+.main-header .other-links .social-links-nav a i {
+  color: #ffffff !important;
+}
+
+.main-header .other-links .social-links-nav a:hover {
+  color: var(--thm-base) !important;
+  transform: translateY(-2px);
+}
+
+.main-header .other-links .social-links-nav a:hover i {
+  color: var(--thm-base) !important;
+}
+
 .main-header .nav-outer {
   position: absolute;
   left: 0;
