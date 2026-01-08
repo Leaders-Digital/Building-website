@@ -888,9 +888,10 @@ img {
   left: 0;
   top: 0;
   float: left;
-  text-align: center;
+  text-align: left;
   width: 100%;
   z-index: 5;
+  padding-left: 200px;
 }
 
 .main-header .nav-outer .main-menu {
