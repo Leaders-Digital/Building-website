@@ -26926,6 +26926,15 @@ img.lazy-image.loaded {
 }
 
 /* Fixed Contact Note - OBTENIR UN DEVIS */
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .fixed-contact-note {
     position: fixed;
     bottom: 100px;
@@ -26939,18 +26948,21 @@ img.lazy-image.loaded {
     gap: 10px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     z-index: 999;
+    padding: 15px 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 300ms ease;
     font-family: var(--thm-font);
+    animation: floatUpDown 1.2s ease-in-out infinite;
 }
 
 .fixed-contact-note:hover {
     background: var(--thm-black);
     color: #ffffff;
-    transform: translateY(-3px);
+    transform: translateY(-13px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    animation-play-state: paused;
 }
 
 .fixed-contact-note i {
