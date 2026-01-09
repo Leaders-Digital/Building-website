@@ -310,6 +310,14 @@
     var mobileMenuContent = $(".main-header .nav-outer .main-menu").html();
     var mobileNavContainer = $(".mobile-nav__container");
     mobileNavContainer.append(mobileMenuContent);
+    
+    // Add social icons to mobile menu
+    var socialLinks = $(".main-header .other-links .social-links-nav").html();
+    if (socialLinks) {
+      var socialContainer = $("<div class='mobile-nav__social'></div>");
+      socialContainer.html(socialLinks);
+      mobileNavContainer.after(socialContainer);
+    }
 
     //Dropdown Button
     mobileNavContainer

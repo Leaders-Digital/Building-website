@@ -86,7 +86,7 @@
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1350px) {
   .main-header.fixed-header .header-upper .logo-box {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -105,6 +105,14 @@
   }
 
   .main-header .other-links .link-box {
+    display: none;
+  }
+
+  .main-header .other-links .social-links-nav {
+    display: none;
+  }
+
+  .main-footer .social-links {
     display: none;
   }
 
