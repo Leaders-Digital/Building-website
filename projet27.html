@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="facebook-domain-verification" content="egl5ces6dl8333fkjr1b9gcq3oab7p" />
-    <title>Leaders Building - Projet 26 </title>
+    <title>Leaders Building - Projet 27 </title>
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -49,132 +49,13 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
     <style>
-        .slider {
-  position:relative;
-  height:0px;
-  padding-bottom:66.666666667%;
-  margin-top:24px;
-  margin-bottom:24px;
-}
-
-.slider__after {
-  position:absolute;
-  top:0px;
-  left:0px;
-  z-index:1;
-  width:100%;
-  height:100%;
-  background-image:url('img/project/Project26/main.png');
-  background-size:cover;
-  pointer-events: none;
-}
-
-.slider__before {
-  position:absolute;
-  top:0px;
-  left:0px;
-  z-index:2;
-  width:50%;
-  height:100%;
-  background-image:url('img/project/Project26/main.png');
-  background-size:cover;
-  pointer-events: none;
-  overflow:hidden;
-}
-
-.slider__before:before {
-  content:'Avant';
-  position:absolute;
-  left:8px;
-  top:8px;
-  color:white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.slider__after:before {
-  content:'Après';
-  position:absolute;
-  right:8px;
-  top:8px;
-  color:white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.slider__separator {
-  position:absolute;
-  left:50%;
-  width:2px;
-  top:0px;
-  bottom:0px;
-  background:rgba(255,255,255,0.7);
-  box-shadow: 0 5px 10px 0px rgba(0,0,0,0.5);
-  cursor:ew-resize;
-  z-index:3;
-  transform:translateX(-50%);
-}
-
-.slider__range {
-  position:absolute;
-  width:100%;
-  bottom:0px;
-  z-index: 3;
-  appearance: none;
-  background:rgba(255,255,255,0.3);
-  outline:none;
-  margin:0px;
-}
-
-.slider__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width:12px;
-  height:16px;
-  background:white;
-}
-
-.slider__range::-moz-slider-thumb {
-  -moz-appearance: none;
-  width:12px;
-  height:16px;
-  background:white;
-}
-
-.slider--tokyo .slider__before {
-  background-image: url('img/project/Project26/main.png');
-}
-
-.slider--tokyo .slider__after {
-  background-image: url('img/project/Project26/main-1.png');
-}
-
-.slider--tokyo .slider__separator:before {
-  content:'';
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  border:solid 2px white;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-}
-
-.slider--tokyo .slider__range {
-  display:none;
-}
-
-.slider--tokyo .slider__before:before, 
-.slider--tokyo .slider__after:before {
-  top:50%;
-  transform:translateY(-50%);
-  background:rgb(220,193,81);
-  padding:8px 16px;
-  margin-left:8px;
-  margin-right:8px;
-}
-
-
+        /* Harmoniser la hauteur des carrousels Extérieur / Plans */
+        .project27-carousel .image-box img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
     </style>
 </head>
 
@@ -343,11 +224,11 @@
             <div class="banner-inner">
                 <div class="auto-container">
                     <div class="inner-container clearfix">
-                        <h1>PROJET N°26</h1>
+                        <h1>PROJET N°27</h1>
                         <div class="page-nav">
                             <ul class="bread-crumb clearfix">
                                 <li><a href="index.html">Page d'accueil</a></li>
-                                <li class="active"> Projet 26</li>
+                                <li class="active"> Projet 27</li>
                             </ul>
                         </div>
                     </div>
@@ -363,58 +244,97 @@
                     <!-- Images Slider Extérieur -->
                     <div class="image-col col-lg-6 col-md-12 col-sm-12">
                         <i class="fa-solid fa-circle" style="color: #dcc151; margin-bottom: 20px;"></i> Extérieur 
-                        <div class="owl-carousel owl-theme">
+                        <div class="owl-carousel owl-theme project27-carousel">
                             <figure class="image-box">
-                                <a href="img/project/Project26/4.png" class="lightbox-image" data-fancybox="gallery-ext">
-                                    <img src="img/project/Project26/4.png" alt="">
+                                <a href="img/project/Project27/1.png" class="lightbox-image" data-fancybox="gallery-ext">
+                                    <img src="img/project/Project27/1.png" alt="">
                                 </a>
                             </figure>
                             <figure class="image-box">
-           
+                                <a href="img/project/Project27/2.png" class="lightbox-image" data-fancybox="gallery-ext">
+                                    <img src="img/project/Project27/2.png" alt="">
+                                </a>
+                            </figure>
                             <figure class="image-box">
-                                <a href="img/project/Project26/9.png" class="lightbox-image" data-fancybox="gallery-ext">
-                                    <img src="img/project/Project26/9.png" alt="">
+                                <a href="img/project/Project27/3.png" class="lightbox-image" data-fancybox="gallery-ext">
+                                    <img src="img/project/Project27/3.png" alt="">
+                                </a>
+                            </figure>
+                            <figure class="image-box">
+                                <a href="img/project/Project27/4.png" class="lightbox-image" data-fancybox="gallery-ext">
+                                    <img src="img/project/Project27/4.png" alt="">
                                 </a>
                             </figure>
                         </div>
                     </div> 
 
-                    <!-- Images Slider Intérieur -->
+                    <!-- Plans -->
                     <div class="image-col col-lg-6 col-md-12 col-sm-12">
-                        <i class="fa-solid fa-circle" style="color: #dcc151; margin-bottom: 20px;"></i> Intérieur 
-                        <div class="owl-carousel owl-theme">
+                        <i class="fa-solid fa-circle" style="color: #dcc151; margin-bottom: 20px;"></i> Plans 
+                        <div class="owl-carousel owl-theme project27-carousel">
                             <figure class="image-box">
-                                <a href="img/project/Project26/2.png" class="lightbox-image" data-fancybox="gallery-int">
-                                    <img src="img/project/Project26/2.png" alt="">
+                                <a href="img/project/Project27/5.png" class="lightbox-image" data-fancybox="plans">
+                                    <img src="img/project/Project27/5.png" alt="Plan 1">
                                 </a>
                             </figure>
                             <figure class="image-box">
-                                <a href="img/project/Project26/3.png" class="lightbox-image" data-fancybox="gallery-int">
-                                    <img src="img/project/Project26/3.png" alt="">
-                                </a>
-                            </figure>
-                            <figure class="image-box">
-                                <a href="img/project/Project26/5.png" class="lightbox-image" data-fancybox="gallery-int">
-                                    <img src="img/project/Project26/5.png" alt="">
-                                </a>
-                            </figure>
-                            <figure class="image-box">
-                                <a href="img/project/Project26/6.png" class="lightbox-image" data-fancybox="gallery-int">
-                                    <img src="img/project/Project26/6.png" alt="">
+                                <a href="img/project/Project27/6.png" class="lightbox-image" data-fancybox="plans">
+                                    <img src="img/project/Project27/6.png" alt="Plan 2">
                                 </a>
                             </figure>
                         </div>
-                    </div> 
+                    </div>
 
                     <!-- Text Column -->
-                    <div class="text-col col-lg-12 col-md-12 col-sm-12 pt-5">
+                    <div class="text-col col-lg-6 col-md-12 col-sm-12 pt-5">
                         <div class="inner">
                             <div class="text-content">
-
                                 <div class="text-col col-lg-12 col-md-12 col-sm-12">
                                     <h5>PRÉSENTATION</h5>
                                     <ul>
-                                        <li><i class="fa-solid fa-building" style="color: #898888;"></i> Projet agence immobilière Le Portail</li>
+                                        <li><i class="fa-solid fa-house" style="color: #898888;"></i> Villa de maître composée de deux niveaux, sise à Hammamet</li>
+                                        <li><i class="fa-solid fa-location-dot" style="color: #898888;"></i> Emplacement : Hammamet</li>
+                                        <li><i class="fa-solid fa-layer-group" style="color: #898888;"></i> Superficie du terrain : 400 m²</li>
+                                        <li><i class="fa-solid fa-layer-group" style="color: #898888;"></i> RDC : 161 m² &nbsp;–&nbsp; Étage : 153 m²</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Composition Column -->
+                    <div class="text-col col-lg-6 col-md-12 col-sm-12 pt-5">
+                        <div class="inner">
+                            <h5>Composition de la villa</h5>
+                            <div class="row">
+                                <!-- R.D.C Section -->
+                                <div class="text-col col-lg-6 col-md-12 col-sm-12">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle" style="color: #dcc151;"></i> RDC : 161 m²
+                                            <ul>
+                                                <li>Studio</li>
+                                                <li>Salon</li>
+                                                <li>Suite parentale</li>
+                                                <li>Buanderie</li>
+                                                <li>Salle de bain commune</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                                <!-- 1er Étage Section -->
+                                <div class="text-col col-lg-6 col-md-12 col-sm-12">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle" style="color: #dcc151;"></i> 1er Étage : 153 m²
+                                            <ul>
+                                                <li>Salle de cinéma</li>
+                                                <li>Suite parentale</li>
+                                                <li>2 chambres</li>
+                                                <li>Salle de bain commune</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -429,7 +349,7 @@
         <div class="post-control">
             <div class="auto-container">
                 <div class="inner clearfix">
-                    <div class="control prev"><a href="projet25.html"><span class="fa fa-angle-left"></span> &nbsp; Précédent</a>
+                    <div class="control prev"><a href="projet26.html"><span class="fa fa-angle-left"></span> &nbsp; Précédent</a>
                     </div>
                     <div class="control next"><a href="projet27.html">Suivant &nbsp;<span class="fa fa-angle-right"></span></a></div>
                 </div>
@@ -628,58 +548,6 @@
                 autoplayHoverPause: true // Pause sur survol
             });
         });
-    </script>
-
-    <script>
-        let sliders = document.querySelectorAll('.slider');
-
-sliders.forEach(function (slider) {
-  let sliderRange = slider.querySelector('.slider__range');
-  let sliderBefore = slider.querySelector('.slider__before');
-  let sliderSeparator = slider.querySelector('.slider__separator');
-
-  function updateSliderPosition() {
-    sliderBefore.style = `width:${sliderRange.value}%`;
-    sliderSeparator.style = `left:${sliderRange.value}%`;
-  }
-
-  sliderRange.addEventListener('input', updateSliderPosition);
-
-  let isDragging = false;
-
-  sliderSeparator.addEventListener('mousedown', function() {
-    isDragging = true;
-  });
-
-  sliderSeparator.addEventListener('touchstart', function() {
-      isDragging = true;
-  });
-  document.addEventListener('mouseup', function() {
-      isDragging = false;
-  });
-  document.addEventListener('touchend', function() {
-      isDragging = false;
-  });
-
-  document.addEventListener('mousemove', function (e) {
-    processMove(e.clientX);
-  });
-
-  document.addEventListener('touchmove', function (e) {
-    processMove(e.touches[0].clientX);
-  });
-
-  function processMove(x) {
-      if (isDragging) {
-          let sliderRect = slider.getBoundingClientRect();
-          let newWidth = (x - sliderRect.left) /
-              sliderRect.width * 100;
-          sliderRange.value = newWidth;
-          updateSliderPosition();
-      }
-  }
-});
-
     </script>
 
 
